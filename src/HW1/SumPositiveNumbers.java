@@ -12,8 +12,14 @@ public class SumPositiveNumbers {
 		System.out.println(sum(arr2));
 	}
 
-	static int sum(int[] numbers) {
-		return 0;
+	static int sum(int[] numbers)
+	{int res=0;
+	for (int i=0; i<numbers.length; i++){
+		if (numbers [i]>0){
+			res+=numbers[i];
+		}
+	}
+		return res;
 	}
 
 }
