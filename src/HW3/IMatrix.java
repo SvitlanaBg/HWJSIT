@@ -31,7 +31,10 @@ public interface IMatrix {
 	 * Заполняет текущую матрицу заданным значением
 	 */
 	void fillMatrix(double value);
-
+/**
+ * Сравнение матриц
+ */
+boolean compareMatrix(IMatrix b);
 	/**
 	 * Возвращает сумму текущей матрицы и второго аргумента.
 	 * (После выполнения функции текущая матрица не должна быть изменена!
@@ -43,6 +46,7 @@ public interface IMatrix {
 	 * имеют несовместимое количество строк и (или) столбцов
 	 * @throws NullPointerException если второй аргумент null
 	 */
+
 	IMatrix add(IMatrix otherMatrix);
 
 	/**
